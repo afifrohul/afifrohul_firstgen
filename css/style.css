@@ -1,0 +1,85 @@
+body {
+  background-color: #201f1f;
+}
+
+.banner {
+  margin-top: 4em;
+  padding-top: 7em;
+  background-image: url(../img/grid-lines-abstract-digital-art-uhdpaper.com-hd-4.306.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0px, -100px;
+  overflow: hidden;
+  /* min-height: 900px; */
+}
+
+section {
+  padding-top: 4em;
+}
+
+.banner,
+.project {
+  min-height: 700px;
+}
+
+.banner img,
+.about img {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.contact {
+  min-height: 600px;
+}
+
+.skill img {
+  width: 100%;
+  transition: 0.5s;
+  filter: grayscale(1);
+}
+
+.skill:hover img {
+  /* transform: translateY(calc(-100% + 315px)); */
+  filter: grayscale(0);
+}
+.scroll {
+  height: 315px;
+  overflow: hidden;
+}
+
+.scroll img {
+  width: 100%;
+  transition: transform 2s linear;
+  filter: grayscale(1);
+}
+
+.scroll:hover img {
+  transform: translateY(calc(-100% + 315px));
+  filter: grayscale(0);
+}
+
+.hover {
+  z-index: 99;
+}
+
+.foto {
+  width: 333.33px;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner img {
+    display: none;
+  }
+  .about img {
+    margin: auto;
+  }
+  .skill {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .foto {
+    width: 100%;
+  }
+}
