@@ -65,6 +65,20 @@ section {
   filter: grayscale(0);
 }
 
+.mockup img {
+  width: 100%;
+  transition: .5s;
+  filter: grayscale(1);
+}
+
+.mockup:hover img {
+  /* transform: translateY(calc(-100% + 315px)); */
+  filter: grayscale(0);
+}
+
+
+
+
 .hover {
   z-index: 99;
 }
